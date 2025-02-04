@@ -1,11 +1,20 @@
-// Example: Alert when clicking a staff member (Replace with real interactions)
-document.addEventListener("DOMContentLoaded", () => {
-    let staffMembers = document.querySelectorAll(".staff-member");
-    
-    staffMembers.forEach(member => {
-        member.addEventListener("click", () => {
-            alert("You clicked on " + member.querySelector("h3").innerText);
-        });
+document.addEventListener("DOMContentLoaded", function() {
+    const track = document.querySelector(".carousel-track");
+    const prevButton = document.querySelector(".prev");
+    const nextButton = document.querySelector(".next");
+    let index = 0;
+
+    function updateCarousel() {
+        track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    nextButton.addEventListener("click", function() {
+        index = (index + 1) % 4;
+        updateCarousel();
+    });
+
+    prevButton.addEventListener("click", function() {
+        index = (index - 1 + 4) % 4;
+        updateCarousel();
     });
 });
-
