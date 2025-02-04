@@ -17,8 +17,7 @@
                 <li><a href="staff.html">Meet the Staff</a></li>
                 <li><a href="#events">Events</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://discord.gg/FTAC" target="_blank">Discord</a></li>
+                <li><a href="#discord">Discord</a></li>
             </ul>
         </nav>
     </header>
@@ -42,20 +41,30 @@
 
     <section id="gallery">
         <h2>Gallery</h2>
-        <div class="gallery-grid">
-            <img src="images/gallery1.jpg" alt="Gallery Image 1">
-            <img src="images/gallery2.jpg" alt="Gallery Image 2">
-            <img src="images/gallery3.jpg" alt="Gallery Image 3">
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="images/gallery1.jpg" alt="Gallery Image 1">
+                <img src="images/gallery2.jpg" alt="Gallery Image 2">
+                <img src="images/gallery3.jpg" alt="Gallery Image 3">
+                <img src="images/gallery4.jpg" alt="Gallery Image 4">
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Want to get in touch? Reach out through our Discord!</p>
+    <section id="discord">
+        <h2>Join Our Discord</h2>
+        <p>Connect with us on Discord to chat, share art, and be part of the community!</p>
+        <a href="https://discord.gg/FTAC" class="discord-button">
+            <i class="fab fa-discord"></i> Join Now
+        </a>
     </section>
 
     <footer>
         <p>&copy; 2025 Furry Talk and Chill | <a href="https://github.com/Icetiger540/ftac-website">GitHub</a></p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
