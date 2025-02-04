@@ -77,29 +77,33 @@ button.prev, button.next {
 button.prev { left: 10px; }
 button.next { right: 10px; }
 
-/* News Section */
-.news-container {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
+/* Winners Section */
+#winners {
+    margin-top: 40px;
+    padding: 20px;
+    background: #1f1f1f;
+    border-radius: 10px;
 }
 
-.news-card {
+.winners-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.winner-card {
     background: #2a2a2a;
     padding: 15px;
     border-radius: 10px;
-    width: 45%;
-    text-align: left;
+    width: 250px;
+    text-align: center;
+    transition: 0.3s;
 }
 
-.news-card a {
-    color: #2a9d8f;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.news-card a:hover {
-    text-decoration: underline;
+.winner-card:hover {
+    background: #333;
+    transform: scale(1.05);
 }
 
 /* Footer */
